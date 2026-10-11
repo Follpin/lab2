@@ -1,0 +1,229 @@
+﻿1. Generate dataset
+2. Run benchmark
+3. Exit
+Enter your choice: Enter dataset filename to load: Loading dataset from data/data_10k.txt...
+Dataset loaded. Size: 10000 elements.
+
+Fast Operation (Memory-Bound):
+Standard (No Policy):         0.032 ms
+Standard (Seq):               0.0475 ms
+Standard (Par):               0.0472 ms
+Standard (Par Unseq):         0.0498 ms
+
+Custom Parallel Algorithm (Fast Operation):
+Threads (K)    Time (ms)      
+1              0.0319         
+2              0.58           
+3              0.2735         
+4              0.2665         
+5              0.3954         
+6              0.4168         
+7              0.347          
+8              0.3388         
+9              0.3421         
+10             0.3582         
+11             0.3994         
+12             0.4155         
+13             0.4677         
+14             0.4742         
+15             0.5443         
+16             0.5506         
+17             0.5856         
+18             0.585          
+19             0.6407         
+20             0.6573         
+21             0.6715         
+22             0.6846         
+23             0.7301         
+24             0.7727         
+-> Best K: 1 (Time: 0.0319 ms)
+-> Hardware Threads: 12
+
+Slow Operation (CPU-Bound):
+Standard (No Policy):         49.6823 ms
+Standard (Seq):               48.8214 ms
+Standard (Par):               48.62 ms
+Standard (Par Unseq):         48.8392 ms
+
+Custom Parallel Algorithm (Slow Operation):
+Threads (K)    Time (ms)      
+1              48.5385        
+2              24.8571        
+3              16.8639        
+4              13.8587        
+5              10.2139        
+6              10.0934        
+7              9.5806         
+8              9.0971         
+9              8.1469         
+10             7.4428         
+11             6.7179         
+12             6.2097         
+13             7.4035         
+14             8.7833         
+15             7.7269         
+16             7.9072         
+17             7.8314         
+18             8.0854         
+19             7.2505         
+20             7.2574         
+21             6.7038         
+22             6.9056         
+23             7.7416         
+24             8.1169         
+-> Best K: 12 (Time: 6.2097 ms)
+-> Hardware Threads: 12
+1. Generate dataset
+2. Run benchmark
+3. Exit
+Enter your choice: Enter dataset filename to load: Loading dataset from data/data_100k.txt...
+Dataset loaded. Size: 100000 elements.
+
+Fast Operation (Memory-Bound):
+Standard (No Policy):         0.3254 ms
+Standard (Seq):               0.4997 ms
+Standard (Par):               0.4597 ms
+Standard (Par Unseq):         0.4708 ms
+
+Custom Parallel Algorithm (Fast Operation):
+Threads (K)    Time (ms)      
+1              0.3113         
+2              0.3656         
+3              0.3892         
+4              0.5502         
+5              0.4639         
+6              0.4508         
+7              0.5068         
+8              0.4996         
+9              0.3622         
+10             0.3526         
+11             0.3859         
+12             0.4197         
+13             0.4584         
+14             0.4995         
+15             0.5098         
+16             0.5276         
+17             0.5733         
+18             0.5792         
+19             0.61           
+20             0.6334         
+21             0.6876         
+22             0.695          
+23             0.7316         
+24             0.7308         
+-> Best K: 1 (Time: 0.3113 ms)
+-> Hardware Threads: 12
+
+Slow Operation (CPU-Bound):
+Standard (No Policy):         490.128 ms
+Standard (Seq):               490.053 ms
+Standard (Par):               487.633 ms
+Standard (Par Unseq):         489.408 ms
+
+Custom Parallel Algorithm (Slow Operation):
+Threads (K)    Time (ms)      
+1              489.481        
+2              245.778        
+3              174.254        
+4              139.209        
+5              99.7523        
+6              114.519        
+7              99.2025        
+8              85.6213        
+9              77.4934        
+10             68.7246        
+11             63.242         
+12             61.2161        
+13             78.7008        
+14             73.7149        
+15             70.1077        
+16             68.8108        
+17             67.7789        
+18             69.6984        
+19             69.3088        
+20             69.1276        
+21             66.6982        
+22             63.48          
+23             62.0637        
+24             60.9496        
+-> Best K: 24 (Time: 60.9496 ms)
+-> Hardware Threads: 12
+1. Generate dataset
+2. Run benchmark
+3. Exit
+Enter your choice: Enter dataset filename to load: Loading dataset from data/data_1m.txt...
+Dataset loaded. Size: 1000000 elements.
+
+Fast Operation (Memory-Bound):
+Standard (No Policy):         3.265 ms
+Standard (Seq):               4.7246 ms
+Standard (Par):               4.7376 ms
+Standard (Par Unseq):         4.8769 ms
+
+Custom Parallel Algorithm (Fast Operation):
+Threads (K)    Time (ms)      
+1              3.2534         
+2              1.8663         
+3              1.4455         
+4              1.2357         
+5              0.9585         
+6              1.0488         
+7              1.1504         
+8              1.1777         
+9              1.0356         
+10             0.9293         
+11             1.0187         
+12             0.958          
+13             1.0065         
+14             1.1044         
+15             0.9034         
+16             0.889          
+17             0.858          
+18             0.8741         
+19             0.8723         
+20             0.8907         
+21             0.9745         
+22             0.9137         
+23             0.9898         
+24             0.9646         
+-> Best K: 17 (Time: 0.858 ms)
+-> Hardware Threads: 12
+
+Slow Operation (CPU-Bound):
+Standard (No Policy):         4897.38 ms
+Standard (Seq):               4892.82 ms
+Standard (Par):               4890.25 ms
+Standard (Par Unseq):         4890.7 ms
+
+Custom Parallel Algorithm (Slow Operation):
+Threads (K)    Time (ms)      
+1              4888.36        
+2              2451.38        
+3              2055.02        
+4              1305.97        
+5              1225.81        
+6              1103.79        
+7              924.171        
+8              808.937        
+9              730.198        
+10             665.673        
+11             625.857        
+12             593.427        
+13             630.119        
+14             638.8          
+15             617.226        
+16             606.141        
+17             636.56         
+18             617.11         
+19             611.964        
+20             617.671        
+21             614.001        
+22             651.803        
+23             648.29         
+24             662.356        
+-> Best K: 12 (Time: 593.427 ms)
+-> Hardware Threads: 12
+1. Generate dataset
+2. Run benchmark
+3. Exit
+Enter your choice: Exiting...
